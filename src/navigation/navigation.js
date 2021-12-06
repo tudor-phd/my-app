@@ -27,15 +27,14 @@ magicMouse(options);
 
 function Navigation() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename= {"my-app"}>
       <MenuItems />
       <Player url={sound} />
       <Routes>
-        <Route exact path="/my-app" element={<App />} />
         <Route exact path="/" element={<App />} />
-        <Route exact path="/my-app/about" element={<About />} />
-        <Route exact path="/my-app/skills" element={<Skills />} />
-        <Route exact path="/my-app/work" element={<Work />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/skills" element={<Skills />} />
+        <Route exact path="/work" element={<Work />} />
         <Route
           exact
           path="*"
