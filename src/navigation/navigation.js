@@ -31,6 +31,7 @@ function Navigation() {
       <MenuItems />
       <Player url={sound} />
       <Routes>
+        <Route exact path="/my-app" element={<App />} />
         <Route exact path="/" element={<App />} />
         <Route exact path="about" element={<About />} />
         <Route exact path="skills" element={<Skills />} />
