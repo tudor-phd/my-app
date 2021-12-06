@@ -1,0 +1,19 @@
+:root {
+    overflow: hidden;
+text-align: center;
+}
+
+.section {
+  height: 100vh;
+}
+.textContainer {
+  position: relative;
+  display: inline-block;
+  transform-origin: center;
+}
+.text, .text2 {
+  position: relative;
+  font-size: 80px;
+  font-weight: bold;
+  display: inline-block;
+}

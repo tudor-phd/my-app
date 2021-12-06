@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.city-bkg {
+  margin: auto;
+  background-color: green;
+  display: block;
+  width: 100%
+}
+
+.clouds{
+  position: absolute;
+  animation: run ease 25s;
+  -webkit-animation: run ease 25s;
+  -moz-animation: run ease 25s;
+  -o-animation: run ease 25s;
+  -ms-animation: run ease 25s;
+}   
+
+@keyframes run {
+  0% { margin-left: -98%;}
+  100%{ margin-left: 0%;}
+}
+
+@-moz-keyframes run {
+  0% { margin-left: -98%;}
+  100%{ margin-left: 0%;}
+}
+
+@-webkit-keyframes run {
+  0% { margin-left: -98%;}
+  100%{ margin-left: 0%;}
+}
+
+@-o-keyframes run {
+  0% { margin-left: -98%;}
+  100%{ margin-left: 0%;}
+}
+
+@-ms-keyframes run {
+  0% { margin-left: -98%;}
+  100%{ margin-left: 0%;}
+}
+

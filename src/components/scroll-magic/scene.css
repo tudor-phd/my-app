@@ -1,0 +1,23 @@
+.project-work{
+    /* width:50%; */
+    text-align: center;
+}
+
+.timetex-img{
+    margin: auto;
+    display: flex;
+    width: 50vw;
+}
+
+.display-flex{
+    display: flex
+}
+
+.app-text{
+margin:10%;
+font-size: 25px;
+}
+
+.app-about{
+    font-size: 3vh
+  }

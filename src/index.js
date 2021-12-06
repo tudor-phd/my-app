@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Navigation from "./navigation/navigation"
 import reportWebVitals from './reportWebVitals';
+// import Player from './components/sound/sound'
+// import sound from './components/sound/mrrobot.mp3'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Navigation/>
   </React.StrictMode>,
   document.getElementById('root')
 );

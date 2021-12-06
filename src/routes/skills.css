@@ -1,0 +1,47 @@
+.skills{
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 70vw;
+}
+
+.skillbar{
+    background: black !important;
+}
+
+.skillbar-percent {
+    position: absolute;
+    right: -50px;
+    color: #49fb35;
+}
+
+.proffesional-skills{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+@media (min-width:320px)  { 
+    .proffesional-skills{
+        display: block;}
+    }
+@media (min-width:481px)  {    .proffesional-skills{
+    display: block;}}
+@media (min-width:641px)  {    .proffesional-skills{
+    display: block;} }
+@media (min-width:961px)  {     .proffesional-skills{
+    display: block;} }
+@media (min-width:1025px) {     .proffesional-skills{
+    display: inline-flex;}}
+@media (min-width:1281px) { .proffesional-skills{
+    display: inline-flex;}  }
+
+.skills-title{
+    font-size: 20px;
+    color:#49fb35
+}
+
+
+

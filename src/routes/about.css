@@ -1,0 +1,136 @@
+.about-lkdn{
+  position: absolute;
+  bottom: 20px;
+  right:20px
+}
+
+.about-hero-text{
+  margin-bottom: 5vh;
+  text-transform: uppercase;
+  font-size: 4vh;
+  line-height: 1;
+  background: -webkit-linear-gradient(#AD3FEB, #FF0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.email-me{
+  color:#49fb35
+}
+
+.about-hero-text:hover {
+  cursor: pointer;
+  background: -webkit-linear-gradient(#FF0000, #AD3FEB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-container {
+  cursor: pointer;
+  position:absolute;
+  right:0;
+  width: 35vw;
+  height: 100vh;
+}
+.about-container canvas {
+  position:absolute;
+  right:0;
+  border-radius:6px;
+  z-index:0;
+}
+
+.shiny {
+  color: white;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.shiny::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--y, 0) * 1px - 50px);
+  left: calc(var(--x, 0) * 1px - 50px);
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#39FF14, #3984ff00 35%);
+  /* background-image: url(https://i.makeagif.com/media/10-04-2014/ip13Cg.gif);
+  border-radius: 50%; */
+
+
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.shiny:hover::after {
+  opacity: 0.4;
+}
+
+
+
+.heading {
+  width: 50%;
+  color:white;
+  position: absolute;
+  left: 10%;
+  top: 20vh;
+  font-size: 4vh;
+  display: flex;
+  flex-direction: column;
+}
+.heading > div {
+  overflow: hidden;
+}
+.heading > div > p {
+  width: 50%;
+  white-space: nowrap;
+  margin: 0;
+  line-height: 117%;
+}
+
+.green {
+  color: #49fb35;
+}
+
+div.heading > div {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+div.heading > div:nth-child(2) > p {
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+}
+
+div.heading > div {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+div.heading > div:nth-child(3) > p {
+  -webkit-animation-delay: 0.075s;
+          animation-delay: 0.075s;
+}
+
+.slide-up {
+  -webkit-animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
+          animation: slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

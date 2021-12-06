@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+import { Clouds } from "./components/clouds/clouds"
+import Quote from './components/quote/quote'
 
 function App() {
+  useEffect(() => {
+    Clouds('display');
+    const cloud = document.getElementsByTagName('canvas')[0];
+        // Specify how to clean up after this effect:
+        return function cleanup() {
+          
+          if(cloud){
+            cloud.style.display = "none";
+          }
+        };
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Quote />
+    </main>
   );
 }
 
 export default App;
+
