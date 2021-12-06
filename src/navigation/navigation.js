@@ -27,7 +27,7 @@ magicMouse(options);
 
 function Navigation() {
   return (
-    <BrowserRouter basename= {"my-app"}>
+    <BrowserRouter basename= {"/"}>
       <MenuItems />
       <Player url={sound} />
       <Routes>
