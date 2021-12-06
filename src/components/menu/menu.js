@@ -20,10 +20,10 @@ function MenuItems() {
         <Menu isOpen={open}
             onStateChange={(state) => handleStateChange(state)}
         >
-            <div onClick={closeMenu}><NeonButton title={'Welcome'} url={'/'} /></div>
-            <div onClick={closeMenu}><NeonButton title={'About'} url={'/about'} /></div>
-            <div onClick={closeMenu}><NeonButton title={'Skills'} url={'/skills'} /></div>
-            <div onClick={closeMenu}><NeonButton title={'Work'} url={'/work'} /></div>
+            <div onClick={closeMenu}><NeonButton title={'Welcome'} url={'/my-app'} /></div>
+            <div onClick={closeMenu}><NeonButton title={'About'} url={'/my-app/about'} /></div>
+            <div onClick={closeMenu}><NeonButton title={'Skills'} url={'/my-app/skills'} /></div>
+            <div onClick={closeMenu}><NeonButton title={'Work'} url={'/my-app/work'} /></div>
             {/* <div onClick={closeMenu}><NeonButton title={'Contact'} url={'/contact'} /></div> */}
         </Menu>
     );
