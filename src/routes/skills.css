@@ -14,8 +14,8 @@
 
 .skillbar-percent {
     position: absolute;
-    right: -50px;
-    color: #49fb35;
+    right: -50px !important;
+    color: #49fb35 !important;
 }
 
 .proffesional-skills{
